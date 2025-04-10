@@ -1,0 +1,38 @@
+/* Light mode */
+body {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+h1 {
+  color: #1f2937;
+}
+
+#question {
+  color: #1f2937;
+}
+
+/* Dark mode overrides */
+.dark body {
+  background-color: #1a202c;
+  color: #f8f8f8;
+}
+
+.dark h1,
+.dark #question {
+  color: #ffffff;
+}
+/* Light mode text color */
+.question-text {
+  color: #1f2937; /* Tailwind's gray-800 */
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .question-text {
+    color: #ffffff;
+  }
+}
